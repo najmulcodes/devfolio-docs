@@ -1,0 +1,11 @@
+﻿# Devfolio Analyzer
+
+> See how your GitHub profile and developer portfolio actually read to someone else.
+
+- [Devfolio Analyzer](https://devfolioanalyzer.vercel.app/index.md): Devfolio Analyzer
+- [Overview](https://devfolioanalyzer.vercel.app/overview.md): Devfolio Analyzer is a Next.js application that combines GitHub's REST API with an LLM-based scoring pipeline to produce structured, actionable evaluations of developer profiles.
+- [Features](https://devfolioanalyzer.vercel.app/features.md): The main output of Devfolio Analyzer is a structured score dashboard rendered after analysis completes.
+- [API Reference](https://devfolioanalyzer.vercel.app/api.md): All API endpoints are Next.js API routes, accessible at /api/*. The API accepts and returns JSON.
+- [Architecture](https://devfolioanalyzer.vercel.app/architecture.md): Devfolio Analyzer is a monorepo Next.js application. All backend logic runs as serverless functions (Next.js API routes), deployed to Vercel's Edge Network. There is no separate backend server.
+- [Deployment](https://devfolioanalyzer.vercel.app/deployment.md): Devfolio Analyzer is designed to deploy on Vercel with zero infrastructure configuration. The only external dependencies are a GitHub token, an LLM API key, and an Upstash Redis instance for caching.
+- [Limitations](https://devfolioanalyzer.vercel.app/limitations.md): Understanding what Devfolio Analyzer cannot do is as important as knowing what it can. This page documents known constraints, data gaps, and scoring edge cases.

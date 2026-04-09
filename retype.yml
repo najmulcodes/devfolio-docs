@@ -1,0 +1,41 @@
+input: docs
+output: .retype
+
+url: https://devfolioanalyzer.vercel.app
+
+branding:
+  title: Devfolio Analyzer
+  label: Docs
+
+description: AI-powered GitHub and portfolio analysis tool
+
+links:
+  - text: GitHub
+    link: https://github.com/najmulcodes/devfolioanalyzer
+  - text: Live Demo
+    link: https://devfolioanalyzer.vercel.app
+
+sidebar:
+  - label: Home
+    link: index.md
+  - label: Overview
+    link: overview.md
+  - label: Features
+    link: features.md
+  - label: API Reference
+    link: api.md
+  - label: Architecture
+    link: architecture.md
+  - label: Deployment
+    link: deployment.md
+  - label: Limitations
+    link: limitations.md
+
+footer:
+  copyright: "© 2026 Devfolio Analyzer"
+
+editor:
+  enabled: false
+
+serve:
+  port: 5000
