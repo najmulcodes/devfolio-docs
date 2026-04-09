@@ -1,6 +1,6 @@
 ﻿# Devfolio Analyzer
 
-> See how your GitHub profile and developer portfolio actually read to someone else.
+> AI-powered GitHub and portfolio analysis tool
 
 - [Devfolio Analyzer](https://devfolioanalyzer.vercel.app/index.md): Devfolio Analyzer
 - [Overview](https://devfolioanalyzer.vercel.app/overview.md): Devfolio Analyzer is a Next.js application that combines GitHub's REST API with an LLM-based scoring pipeline to produce structured, actionable evaluations of developer profiles.
