@@ -10,7 +10,6 @@ branding:
   description: AI-powered GitHub and Portfolio analysis tool
 
   meta:
-  title: Devfolio Analyzer
   description: AI-powered GitHub and portfolio analysis tool
   image: /static/devfolioanalyzer.png
 
