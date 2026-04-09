@@ -7,7 +7,6 @@ branding:
   title: Devfolio Analyzer
   label: Docs
   logo: /static/favicon.png
-  favicon: /static/favicon.png
   description: AI-powered GitHub and Portfolio analysis tool
 
   meta:
