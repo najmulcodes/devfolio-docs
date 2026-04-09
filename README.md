@@ -1,44 +1,68 @@
 # Devfolio Analyzer — Documentation
 
-This is the documentation site for [Devfolio Analyzer](https://devfolio-analyzer.vercel.app), built with [Retype](https://retype.com).
+Documentation for **Devfolio Analyzer**, an AI-powered tool that evaluates GitHub profiles and developer portfolios with structured scoring and actionable feedback.
+
+👉 Live App: https://devfolioanalyzer.vercel.app
+👉 Docs: https://devfoliodocs.vercel.app
+
+---
+
+## What this repo contains
+
+This repository hosts the documentation site built with Retype.
+
+It covers:
+
+* How Devfolio Analyzer works
+* Feature breakdown
+* API reference
+* System architecture
+* Deployment setup
+* Known limitations
+
+The goal is to provide clear, technical insight into how the system evaluates developer profiles and portfolios.
 
 ---
 
 ## Local development
 
-### Prerequisites
+### Requirements
 
-- Node.js 18+
-- npm or yarn
-- Retype CLI
+* Node.js 18+
+* npm (or yarn)
+* Retype CLI
+
+---
 
 ### Install Retype
 
 ```bash
-npm install --global retypeapp
+npm install -g retypeapp
 ```
 
-Or with dotnet (alternative install method):
-
-```bash
-dotnet tool install retypeapp --global
-```
-
-Verify the install:
+Verify installation:
 
 ```bash
 retype --version
 ```
 
-### Clone and run
+---
+
+### Run locally
 
 ```bash
-git clone https://github.com/your-org/devfolio-analyzer.git
-cd devfolio-analyzer/devfolio-docs
-retype watch
+git clone https://github.com/najmulcodes/devfolio-docs.git
+cd devfolio-docs
+retype start
 ```
 
-Retype starts a local dev server at `http://localhost:5000` with hot reload. Edit any `.md` file and the browser updates immediately.
+Open:
+
+```
+http://localhost:5000
+```
+
+The site will reload automatically when you edit any `.md` file.
 
 ---
 
@@ -47,80 +71,104 @@ Retype starts a local dev server at `http://localhost:5000` with hot reload. Edi
 ```
 devfolio-docs/
 ├── docs/
-│   ├── index.md          # Home page
-│   ├── overview.md       # How it works, scoring model
+│   ├── index.md          # Homepage
+│   ├── overview.md       # System overview & scoring model
 │   ├── features.md       # Feature breakdown
-│   ├── api.md            # API reference with request/response examples
-│   ├── architecture.md   # Data flow, folder structure, env vars
-│   ├── deployment.md     # Vercel deployment, local setup, Redis
-│   └── limitations.md    # Known constraints and edge cases
-├── static/               # Logo, favicon (add your own)
-├── retype.yml            # Site config, navigation, branding
+│   ├── api.md            # API documentation
+│   ├── architecture.md   # System design & data flow
+│   ├── deployment.md     # Deployment guide
+│   └── limitations.md    # Constraints & edge cases
+├── static/               # Logo, favicon
+├── retype.yml            # Configuration
 └── README.md             # This file
 ```
 
 ---
 
-## Build for production
+## Build
+
+Generate the production-ready static site:
 
 ```bash
 retype build
 ```
 
-Output is generated to the `.retype/` directory. This is a static site — deploy it anywhere that serves static files.
+Output will be created in:
 
----
-
-## Deploy to Vercel
-
-The `.retype/` build output is a static site. To deploy it on Vercel:
-
-### Option 1: Deploy the static output
-
-1. Build the docs: `retype build`
-2. Create a new Vercel project pointed at the `devfolio-docs` directory
-3. Set the **Output Directory** to `.retype`
-4. Set **Build Command** to `retype build`
-5. Deploy
-
-Vercel will rebuild the docs on every push to the connected branch.
-
-### Option 2: Deploy via Vercel CLI
-
-```bash
-npm install -g vercel
-cd devfolio-docs
-retype build
-cd .retype
-vercel --prod
+```
+.retype/
 ```
 
-### Vercel config (optional)
-
-Create a `vercel.json` in `devfolio-docs/`:
-
-```json
-{
-  "buildCommand": "retype build",
-  "outputDirectory": ".retype",
-  "installCommand": "npm install -g retypeapp"
-}
-```
-
-This lets Vercel handle the full build pipeline without manual steps.
+This folder contains the full static website.
 
 ---
 
-## Updating content
+## Deploy (Vercel)
 
-All documentation content is in the `docs/` directory as Markdown files. Edit any file and commit — Vercel will redeploy automatically if connected to the repository.
+### Recommended setup
 
-Retype supports standard Markdown plus extended syntax for callouts, tabs, code groups, and more. See [retype.com/components](https://retype.com/components) for the full component reference.
+1. Push this repo to GitHub
+2. Import it into Vercel
+3. Use the following settings:
+
+* Build Command:
+
+  ```
+  retype build
+  ```
+* Output Directory:
+
+  ```
+  .retype
+  ```
+* Install Command:
+
+  ```
+  npm install -g retypeapp
+  ```
+
+Deploy. Vercel will automatically rebuild on every push.
 
 ---
 
-## Retype documentation
+## Content updates
 
-- [Getting started](https://retype.com/guides/getting-started/)
-- [Configuration reference](https://retype.com/configuration/project/)
-- [Components](https://retype.com/components/)
+All documentation lives inside the `docs/` folder.
+
+To update:
+
+1. Edit any `.md` file
+2. Commit and push
+3. Vercel redeploys automatically
+
+---
+
+## About Devfolio Analyzer
+
+Devfolio Analyzer evaluates:
+
+* GitHub profile presentation
+* Project quality and structure
+* Contribution consistency
+* Tech stack relevance
+* Portfolio clarity
+
+It returns a structured score along with specific feedback and improvement suggestions.
+
+The focus is not on vanity metrics, but on **actual signal**.
+
+---
+
+## Notes
+
+* This documentation site is static and fast to load
+* All pages are written in Markdown
+* Retype handles layout, navigation, and search
+
+---
+
+## References
+
+* https://retype.com
+* https://retype.com/guides/getting-started/
+* https://retype.com/configuration/project/
