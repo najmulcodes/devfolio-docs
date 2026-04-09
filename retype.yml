@@ -6,8 +6,9 @@ url: https://devfolioanalyzer.vercel.app
 branding:
   title: Devfolio Analyzer
   label: Docs
-
-description: AI-powered GitHub and portfolio analysis tool
+  logo: /static/devfolioanalyzer.png
+  favicon: /static/favicon.png
+  description: AI-powered GitHub and Portfolio analysis tool
 
 links:
   - text: GitHub

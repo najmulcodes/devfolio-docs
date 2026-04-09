@@ -1,6 +1,6 @@
 {
   "version": "4.5.3",
-  "created": "2026-04-09T22:41:50Z",
+  "created": "2026-04-09T23:04:55Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -28,6 +28,9 @@
     },
     {
       "path": "deployment\\index.html"
+    },
+    {
+      "path": "favicon.png"
     },
     {
       "path": "features.md"
@@ -103,6 +106,12 @@
     },
     {
       "path": "sitemap.xml"
+    },
+    {
+      "path": "static\\devfolioanalyzer.png"
+    },
+    {
+      "path": "static\\favicon.png"
     }
   ]
 }
