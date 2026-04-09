@@ -6,6 +6,10 @@ order: 100
 
 # Devfolio Analyzer
 
+<p align="center">
+  <img src="/static/devfolioanalyzer.png" width="700" />
+</p>
+
 **See how your GitHub profile and developer portfolio actually read to someone else.**
 
 Devfolio Analyzer turns public profile data into a clear score, specific feedback, and practical next steps.
